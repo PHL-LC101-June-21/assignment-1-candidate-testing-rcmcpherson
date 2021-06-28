@@ -43,7 +43,7 @@ function gradeQuiz(candidateAnswers) {
 console.log(`\nCandidate Name: ${candidateName}\n \nFirst question: \nYou answered: ${candidateAnswers[0]} \nThe correct answer is ${correctAnswers[0]}\n \nSecond question: \nYou answered: ${candidateAnswers[1]}\nThe correct answer is ${correctAnswers[1]}\n \nThird question: \nYou answered: ${candidateAnswers[2]}\nThe correct answer is ${correctAnswers[2]}\n \nFourth question: \nYou answered: ${candidateAnswers[3]}\nThe correct answer is ${correctAnswers[3]}\n \nFinal question: \nYou answered: ${candidateAnswers[4]}\nThe correct answer is ${correctAnswers[4]}\n `);
 
   let grade="";
-  let correctNum=0
+  let correctNum=0;
   for (i=0;i<questions.length;i++){
     if (correctAnswers[i].toLowerCase==candidateAnswers[i].toLowerCase){
       correctNum++;
